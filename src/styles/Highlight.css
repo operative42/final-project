@@ -1,0 +1,139 @@
+.hightlight-section{
+  margin-top: 80px;
+}
+.hightlight-container {
+  max-width: 900px;
+  margin:0 auto 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.hightlight-text{
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.hightlight-text h2{
+  font-size: 40px;
+  font-weight: 400;
+}
+.hightlight-card {
+
+  border-radius: 8px;
+  box-shadow: 0 3px 20px #ccc;
+}
+
+.hightlight-card img {
+  display: block;
+  width: 100%;
+  height: 164px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.hightlight-text button {
+    color: var(--color-button-text);
+    border: 1px solid var(--color-primary-green);
+    font-size: 16px;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.hightlight-name {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hightlight-name h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.hightlight-name span{
+  color: var(--color-price);
+  font-weight: bold;
+}
+.hightlight-card-description{
+  padding: 1rem;
+}
+.hightlight-card-description p{
+  font-size: 14px;
+  padding: 20px 0;
+  font-family: Karla, sans-serif;
+  text-align: justify;
+}
+.hightlight-button-delivery{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right:20px;
+}
+.hightlight-button-delivery button{
+  background-color: var(--color-primary-yellow);
+  color: var(--color-button-text);
+  font-weight: 600;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.hightlight-button-delivery img{
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 900px) {
+    .hightlight-section {
+        margin-top: 60px;
+    }
+
+    .hightlight-text {
+        width: 100%;
+        padding: 0 20px 30px;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .hightlight-text h2 {
+        font-size: 48px;
+    }
+
+    .hightlight-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hightlight-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .hightlight-text h2 {
+        font-size: 36px;
+    }
+
+    .hightlight-card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .hightlight-name {
+        font-size: 18px;
+    }
+
+    .hightlight-card-description p {
+        font-size: 13px;
+    }
+}

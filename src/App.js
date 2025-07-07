@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import "./styles/App.css";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import HighLightSection from "./components/HighlightSection";
+import '@fontsource-variable/markazi-text';
+import "@fontsource/karla";
+import Testimonial from "./components/Testimonial";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import BookingPage from "./components/BookingPage";
+import ConfirmedBooking from "./components/ConfirmedBooking";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/booking" element={<BookingPage />} />
+        <Route path="/confirmed" element={<ConfirmedBooking />} />
+      </Routes>
     </div>
   );
 }
 
-export default App;
+// Ce composant représente la page d'accueil
+function MainPage() {
+  return (
+    <>
+      <Header />
+
+      <section id="home">
+        <HeroSection />
+      </section>
+
+      <section id="menu">
+        <HighLightSection />
+      </section>
+
+      <section>
+        <Testimonial />
+      </section>
+
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="order">
+        <Footer />
+      </section>
+    </>
+  );
+}

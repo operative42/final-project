@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-primary-green: #495E57;
+    --color-primary-yellow: #F4CE14;
+    --color-secondary: #EDEFEE;
+    --color-button-text: #333333;
+    --color-price: #EE9972;
+    --primary-color: #495e57;
+    --light-primary-color: #a4afab;
+    --dark-primary-color: #3a4b46;
+    --secondary-color: #f4ce14;
+    --light-secondary-color: #f7dd5b;
+    --dark-secondary-color: #ab900e;
+    --tertiary-color: #ee9972;
+    --dark-tertiary-color: #be7a5b;
+    --quaternary-color: #fbdabb;
+    --light-quaternary-color: #fde9d6;
+    --first-dark-gray: #333;
+    --second-dark-gray: #474747;
+    --third-dark-gray: #292929;
+    --first-light-gray: #edefee;
+    --second-light-gray: #f1f2f1;
+    --third-light-gray: #d5d7d6;
+}
+a{
+    text-decoration: none !important; 
+    color: #333333;
+    transition:0.2s;
+}
+H1, H2, H3, H4, H5, H6, P {     
+    font-family: 'Markazi Text Variable', serif;
+}
+button {
+  transition: 0.2s;
+      background-color: var(--color-primary-yellow);
+}
+button:hover {
+        background-color: var(--dark-secondary-color);
+
+}
+
